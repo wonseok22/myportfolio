@@ -74,8 +74,10 @@
       .title p {
         font-size: 180px;
         line-height: 176px;
-        font-weight: bold;
+        font-weight: bold;  
       }
+
+
       .title p:nth-child(2) {
         padding-left: 300px;
       }
@@ -136,7 +138,7 @@
 
       /* archive */
       #archive {
-        margin-top: 200px;
+        padding-top: 200px;
         display: flex;
         width: 100%;
         height: 800px;
@@ -170,8 +172,26 @@
         text-align-last: left;
         font-weight: 300;
       }
-
       /* //archive */
+      /* projects */
+      #project {
+        margin-top: 200px;
+        padding-top: 250px;
+        position: relative;
+      }
+      #project .project__title{
+        position: absolute;
+        left: 60%;
+        font-size: 180px;
+        border-width: bold;
+      }
+      #project .project__inner{
+        margin-top: 500px;
+      }
+      #project .project__inner .project__number{}
+      #project .project__inner .project__img{}
+      #project .project__inner .project__cont{}
+      /* //projects */
     </style>
   </head>
   <body>
@@ -241,6 +261,36 @@
         </div>
       </div>
       <!-- //archive -->
+      <!-- projects -->
+      <div id="project">
+        <div class="project__title">PROJECTS</div>
+        <div class="project__inner">
+          <div class="project__number">1.</div>
+          <img class="project__img" src="./assets/img/project1.png" alt="프로젝트 이미지">
+          <div class="project__cont">
+            <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
+            <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
+            <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
+            </div>
+            <div class="project__main">
+              <div class="project__sub">주요 기능</div>
+              <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
+                여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
+            </div>
+            <div class="project__main">
+              <div class="project__sub">나의 역할</div>
+              <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
+                Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
+            </div>
+            <div class="project__main">
+              <div class="project__sub">기술 스택</div>
+              <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
+            </div>
+            <a href="#" target="_blank" class="project__view"></a>
+          </div>
+        </div>
+      </div>
+      <!-- //projects -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
@@ -269,13 +319,16 @@
                     .pauseFor(100)
                     .typeString('<p>단단한 CS 지식을 기반으로, 새로운 것을 배우기 위한 열정까지 겸비하고 있는</p>')
                     .pauseFor(100)
-                    .typeString('<p>"배울 준비가 된" 개발자입니다.</p>')
+                    .typeString("<p>'배울 준비가 된' 개발자입니다.</p>")
                     .pauseFor(100)
                     .start();
 
             });
           }
         });
+
+      
+
         
     </script>
   </body>
