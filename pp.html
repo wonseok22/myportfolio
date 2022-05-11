@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한원석 포트폴리오</title>
+    <style>
+      html{
+        scroll-behavior: smooth;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+      }
+      body {
+        -ms-overflow-style: none;
+        background-color: #000;
+        width: 100%;
+        height: 10000px;
+      }
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      .container {
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+      }
+      #header {
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+        align-items: center;  
+        margin-top: 20px;
+      }
+      #header .header__name {
+        font-size: 28px;
+        font-weight: bold;
+        padding-left: 20px;
+        float: left;
+      }
+      #header .header__menu {
+        font-size: 24px;
+        float: right;
+        width: 600px;
+        justify-content: space-between;
+        display: flex;
+        margin-right: 20px;
+      }
+      #header .header__menu a {
+        display: block;
+      }
+
+      .title {
+        height: 1000px;
+        margin-top: 200px;
+        width: 100%;
+        background: url("./assets/img/title_bg.png") no-repeat;
+        background-size: 1920px 1250px;
+        background-position: -400px -200px;
+      }
+      .title p {
+        font-size: 180px;
+        line-height: 176px;
+        font-weight: bold;
+      }
+      .title p:nth-child(2) {
+        padding-left: 300px;
+      }
+      .title p:nth-child(4) {
+        padding-left: 270px;
+      }
+      #about {
+        padding-top: 100px;
+      }
+      #about img {
+        display: block;
+        margin: 0 auto;
+      }
+      #about #about__text {
+        margin-top: 100px;
+      }
+      #about #about__text p {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.6;
+      }
+      #about #about__text p em {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: bold;
+      }
+      #about .about__info {
+        margin-top: 80px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+      }
+      #about .about__info .about__inner {
+        justify-content: center;
+        align-items: center;
+        width: 16%;
+        margin-right: 4%;
+      }
+      #about .about__info .about__inner:nth-child(5) {
+        margin-right: 0;
+      }
+      #about .about__info .about__inner .about__logo {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+      #about .about__info .about__inner:nth-child(1) .about__logo {
+        left: 5px;
+
+      }
+      
+      #about .about__info .about__inner .about__cont {
+        margin-top: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div class="header__name"><a href="./pp.html">Han WonSeok</a></div>
+      <div class="header__menu">
+        <a href="#about">ABOUT</a>
+        <a href="#">ARCHIVING</a>
+        <a href="#">PROJECTS</a>
+        <a href="#">SKILLS</a>
+      </div>
+    </header>
+    <!-- //header -->
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <p>USER</p>
+        <p>FRIENDLY</p>
+        <p>BACK-END</p>
+        <p>DEVELOPER</p>
+      </div>
+      <!-- //title -->
+
+      <!-- about -->
+      <div id="about">
+        <img src="./assets/img/face.png" alt="my picture" />
+        <div id="about__text">
+        </div>
+        <div class="about__info">
+          <div class="about__inner">
+            <img src="./assets/img/about_logo1.png" alt="이름" class="about__logo"></img>
+            <div class="about__cont">한원석</div>
+          </div>
+          <div class="about__inner">
+            <img src="./assets/img/about_logo2.png" alt="거주지" class="about__logo"></img>
+            <div class="about__cont">경기 안산시</div>
+          </div>
+          <div class="about__inner">
+            <img src="./assets/img/about_logo3.png" alt="학력" class="about__logo"></img>
+            <div class="about__cont">홍익대학교<br />(컴퓨터공학과 졸업)</div>
+          </div>
+          <div class="about__inner">
+            <img src="./assets/img/about_logo4.png" alt="번호" class="about__logo"></img>
+            <div class="about__cont">010-4613-4649</div>
+          </div>
+          <div class="about__inner">
+            <img src="./assets/img/about_logo5.png" alt="생년월일" class="about__logo"></img>
+            <div class="about__cont">1997.05.25</div>
+          </div>
+        </div>
+      </div>
+      <!-- //about -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+    <script type="text/javascript">
+        
+        let flag = true  // text animation 중복실행 방지
+
+        window.addEventListener('scroll', () => {  // 스크롤 
+          if (window.scrollY > 800 && flag){
+              $(document).ready(function() {
+                flag = false
+                var text = document.getElementById("about__text");
+
+                var typewriter = new Typewriter(text, {
+                    cursor : "",
+                    delay:70
+                });
+
+                typewriter.typeString('<p>안녕하세요.</p>')
+                    .pauseFor(100)
+                    .typeString('<p>새로운 것을 배우기 위해 끊임없이 공부하고</p>')
+                    .pauseFor(100)
+                    .typeString('<p>사람들을 위한 서비스를 개발하고 싶은 주니어 개발자 한원석입니다.</p>')
+                    .pauseFor(100)
+                    .typeString('<p><em>재사용성</em>이 높고 <em>가독성</em>이 좋은 코딩을 추구합니다.</p>')
+                    .pauseFor(100)
+                    .typeString('<p>단단한 CS 지식을 기반으로, 새로운 것을 배우기 위한 열정까지 겸비하고 있는</p>')
+                    .pauseFor(100)
+                    .typeString('<p><em>"배울 준비가 된"</em> 개발자입니다.</p>')
+                    .pauseFor(100)
+                    .start();
+
+            });
+          }
+        });
+        
+    </script>
+  </body>
+</html>
