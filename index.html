@@ -32,6 +32,8 @@
         height: 100%;
         margin: 0 auto;
       }
+
+      /* header */
       #header {
         top: 0;
         left: 0;
@@ -58,7 +60,9 @@
       #header .header__menu a {
         display: block;
       }
+      /* //header */
 
+      /* title */
       .title {
         height: 1000px;
         margin-top: 140px;
@@ -78,6 +82,10 @@
       .title p:nth-child(4) {
         padding-left: 270px;
       }
+      /* //title */
+
+
+      /* about */
       #about {
         padding-top: 100px;
       }
@@ -93,11 +101,6 @@
         font-size: 24px;
         font-weight: 300;
         line-height: 1.6;
-      }
-      #about #about__text p em {
-        text-decoration: none;
-        font-style: normal;
-        font-weight: bold;
       }
       #about .about__info {
         margin-top: 80px;
@@ -129,6 +132,46 @@
         font-size: 24px;
         text-align: center;
       }
+      /* //about */
+
+      /* archive */
+      #archive {
+        margin-top: 200px;
+        display: flex;
+        width: 100%;
+        height: 800px;
+        justify-content: space-between;
+        text-align: center;
+      }
+      #archive .archive__inner{
+        width: 44%;
+        height: 100%;
+      }
+      #archive .archive__inner .archive__img{
+        margin: 0 auto;
+        display: block;
+      }
+      #archive .archive__inner .archive__title{
+        display: inline-block;
+        
+        margin: 60px 0;
+        font-size: 120px;
+        font-weight: bold;
+        border-bottom: 1px solid #fff;
+
+      }
+      #archive .archive__inner .archive__desc{
+        font-weight: bold;
+        font-size: 32px;
+        margin-bottom: 50px;
+      }
+      #archive .archive__inner .archive__cont{
+        font-size: 24px;
+        text-align-last: left;
+        font-weight: 300;
+      }
+
+      /* //archive */
     </style>
   </head>
   <body>
@@ -137,7 +180,7 @@
       <div class="header__name"><a href="./index.html">Han WonSeok</a></div>
       <div class="header__menu">
         <a href="#about">ABOUT</a>
-        <a href="#">ARCHIVING</a>
+        <a href="#archive">ARCHIVING</a>
         <a href="#">PROJECTS</a>
         <a href="#">SKILLS</a>
       </div>
@@ -169,7 +212,7 @@
           </div>
           <div class="about__inner">
             <img src="./assets/img/about_logo3.png" alt="학력" class="about__logo"></img>
-            <div class="about__cont">홍익대학교<br />(컴퓨터공학과 졸업)</div>
+            <div class="about__cont">홍익대학교<br />(컴퓨터공학과)</div>
           </div>
           <div class="about__inner">
             <img src="./assets/img/about_logo4.png" alt="번호" class="about__logo"></img>
@@ -182,6 +225,22 @@
         </div>
       </div>
       <!-- //about -->
+      <!-- archive -->
+      <div id="archive">
+        <div class="archive__inner">
+          <img class="archive__img" src="./assets/img/git.png" alt="GITHUB IMG">
+          <a class="archive__title" href="https://github.com/wonseok22">GIT HUB</a>
+          <div class="archive__desc">소스 코드 저장소입니다.</div>
+          <div class="archive__cont">과거 진행했던 프로젝트의 소스 코드와 설명, 전공 강의를 수강하며 수행했던 과제나 팀 프로젝트, 혼자 학습을 진행하며 공부했던 소스 코드들을 저장해 놓은 소스 코드 저장소입니다.</div>
+        </div>
+        <div class="archive__inner">
+          <img class="archive__img" src="./assets/img/blog.png" alt="BLOG IMG">
+          <a class="archive__title" href="https://recordofwonseok.tistory.com/">BLOG</a>
+          <div class="archive__desc">공부 기록들을 남긴 블로그입니다</div>
+          <div class="archive__cont">알고리즘 코딩 문제에 대한 풀이와 해설, CS 지식을 학습했던 흔적, 여러 언어들과 개발 도구들을 다루며 발생했던 에러나 이를 해결하며 성장했던 점들을 기록하는 블로그입니다. </div>
+        </div>
+      </div>
+      <!-- //archive -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
@@ -206,11 +265,11 @@
                     .pauseFor(100)
                     .typeString('<p>사람들을 위한 서비스를 개발하고 싶은 주니어 개발자 한원석입니다.</p>')
                     .pauseFor(100)
-                    .typeString('<p><em>재사용성</em>이 높고 <em>가독성</em>이 좋은 코딩을 추구합니다.</p>')
+                    .typeString('<p>재사용성이 높고 가독성이 좋은 코딩을 추구합니다.</p>')
                     .pauseFor(100)
                     .typeString('<p>단단한 CS 지식을 기반으로, 새로운 것을 배우기 위한 열정까지 겸비하고 있는</p>')
                     .pauseFor(100)
-                    .typeString('<p><em>"배울 준비가 된"</em> 개발자입니다.</p>')
+                    .typeString('<p>"배울 준비가 된" 개발자입니다.</p>')
                     .pauseFor(100)
                     .start();
 
