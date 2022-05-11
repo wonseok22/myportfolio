@@ -69,7 +69,7 @@
         width: 100%;
         background: url("./assets/img/title_bg.png") no-repeat;
         background-size: 1920px 1250px;
-        background-position: -400px -200px;
+        background-position: -380px -300px;
       }
       .title p {
         font-size: 180px;
@@ -229,13 +229,13 @@
       <div id="archive">
         <div class="archive__inner">
           <img class="archive__img" src="./assets/img/git.png" alt="GITHUB IMG">
-          <a class="archive__title" href="https://github.com/wonseok22">GIT HUB</a>
+          <a class="archive__title" href="https://github.com/wonseok22" target='_blank'>GIT HUB</a>
           <div class="archive__desc">소스 코드 저장소입니다.</div>
           <div class="archive__cont">과거 진행했던 프로젝트의 소스 코드와 설명, 전공 강의를 수강하며 수행했던 과제나 팀 프로젝트, 혼자 학습을 진행하며 공부했던 소스 코드들을 저장해 놓은 소스 코드 저장소입니다.</div>
         </div>
         <div class="archive__inner">
           <img class="archive__img" src="./assets/img/blog.png" alt="BLOG IMG">
-          <a class="archive__title" href="https://recordofwonseok.tistory.com/">BLOG</a>
+          <a class="archive__title" href="https://recordofwonseok.tistory.com/" target='_blank'>BLOG</a>
           <div class="archive__desc">공부 기록들을 남긴 블로그입니다</div>
           <div class="archive__cont">알고리즘 코딩 문제에 대한 풀이와 해설, CS 지식을 학습했던 흔적, 여러 언어들과 개발 도구들을 다루며 발생했던 에러나 이를 해결하며 성장했던 점들을 기록하는 블로그입니다. </div>
         </div>
@@ -245,11 +245,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
     <script type="text/javascript">
-        
+
         let flag = true  // text animation 중복실행 방지
 
         window.addEventListener('scroll', () => {  // 스크롤 
-          if (window.scrollY > 800 && flag){
+          if (window.scrollY > 900 && flag){
               $(document).ready(function() {
                 flag = false
                 var text = document.getElementById("about__text");
