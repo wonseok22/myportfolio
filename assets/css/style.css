@@ -1,0 +1,377 @@
+html {
+  scroll-behavior: smooth;
+  font-family: "GmarketSans";
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+body {
+  -ms-overflow-style: none;
+  background-color: #000;
+  width: 100%;
+  height: 10000px;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.container {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+#header {
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+}
+#header .header__name {
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 20px;
+  float: left;
+}
+#header .header__menu {
+  font-size: 24px;
+  float: right;
+  width: 600px;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 20px;
+}
+#header .header__menu a {
+  display: block;
+}
+/* //header */
+
+/* title */
+.title {
+  height: 1000px;
+  margin-top: 140px;
+  width: 100%;
+  background: url("../img/title_bg.png") no-repeat;
+  background-size: 1920px 1250px;
+  background-position: -380px -300px;
+}
+.title p {
+  font-size: 180px;
+  line-height: 176px;
+  font-weight: bold;
+}
+
+.title p:nth-child(2) {
+  padding-left: 300px;
+}
+.title p:nth-child(4) {
+  padding-left: 270px;
+}
+/* //title */
+
+/* about */
+#about {
+  padding-top: 100px;
+}
+#about img {
+  display: block;
+  margin: 0 auto;
+}
+#about #about__text {
+  margin-top: 100px;
+}
+#about #about__text p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+#about .about__info {
+  margin-top: 80px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#about .about__info .about__inner {
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  margin-right: 4%;
+}
+#about .about__info .about__inner:nth-child(5) {
+  margin-right: 0;
+}
+#about .about__info .about__inner .about__logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 30px;
+}
+#about .about__info .about__inner:nth-child(1) .about__logo {
+  left: 5px;
+}
+
+#about .about__info .about__inner .about__cont {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+/* //about */
+
+/* archive */
+#archive {
+  margin-top: 100px;
+  padding-top: 200px;
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: space-between;
+  text-align: center;
+}
+#archive .archive__inner {
+  width: 44%;
+  height: 100%;
+}
+#archive .archive__inner .archive__img {
+  margin: 0 auto;
+  display: block;
+}
+#archive .archive__inner .archive__title {
+  display: inline-block;
+  margin: 60px 0;
+  font-size: 120px;
+  font-weight: bold;
+  border-bottom: 1px solid #fff;
+}
+#archive .archive__inner .archive__title:hover {
+  color: rgb(196, 196, 196);
+}
+#archive .archive__inner .archive__desc {
+  font-weight: bold;
+  font-family: "SCoreDream";
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+#archive .archive__inner .archive__cont {
+  font-family: "SCoreDream";
+  font-size: 20px;
+  text-align-last: left;
+  font-weight: 200;
+}
+/* //archive */
+/* projects */
+#project {
+  margin-top: 200px;
+  padding-top: 250px;
+  position: relative;
+}
+#project .project__title {
+  font-family: "inter";
+  position: absolute;
+  font-weight: bold;
+  left: 60%;
+  font-size: 180px;
+  border-width: bold;
+}
+#project .project__inner {
+  margin-top: 500px;
+}
+#project .project__inner .project__number {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  line-height: 1;
+  font-size: 100px;
+  font-family: "GmarketSans" !important;
+  font-weight: bold;
+  position: relative;
+  z-index: 9999;
+}
+/* #project .project__inner:nth-child(2) .project__number::before {
+  z-index: 2;
+  content: "1.";
+  font-size: 250px;
+  font-weight: bold;
+  color: #ccc;
+  left: 10px;
+  top: -150px;
+  opacity: 0.3;
+  position: absolute;
+} */
+#project .project__inner .project__box {
+  font-family: "SCoreDream";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 440px;
+}
+#project .project__inner .project__img {
+  width: 48%;
+  object-fit: contain;
+  position: relative;
+}
+#project .project__inner .project__bg {
+  z-index: 0;
+  position: absolute;
+  top: 720px;
+  width: 880px;
+  height: 780px;
+  left: -320px;
+}
+#project .project__inner .project__cont {
+  width: 47%;
+  height: 100%;
+}
+#project .project__inner .project__cont .project__subTitle {
+  font-size: 36px;
+  line-height: 1;
+}
+#project .project__inner .project__cont .project__period {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 14px;
+}
+#project .project__inner .project__cont .project__desc {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+#project .project__inner .project__cont .project__main {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+#project .project__inner .project__cont .project__main .project__sub {
+  width: 15%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+#project .project__inner .project__cont .project__main .project__text {
+  width: 83%;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#project .project__inner .project__cont .project__view {
+}
+/* //projects */
+/* toyprojects */
+#toyproject {
+  margin-top: 200px;
+  padding-top: 250px;
+  position: relative;
+}
+#toyproject .project__title {
+  font-family: "inter";
+  position: absolute;
+  font-weight: bold;
+  left: -26%;
+  font-size: 180px;
+  line-height: 0.9;
+  border-width: bold;
+}
+#toyproject .project__title p:nth-child(2) {
+  margin-left: 230px;
+}
+#toyproject .project__inner {
+  margin-top: 500px;
+}
+#toyproject .project__inner .project__number {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  line-height: 1;
+  font-size: 100px;
+  font-family: "GmarketSans" !important;
+  font-weight: bold;
+  position: relative;
+  z-index: 9999;
+}
+/* #toyproject .project__inner:nth-child(2) .project__number::before {
+  z-index: 2;
+  content: "1.";
+  font-size: 250px;
+  font-weight: bold;
+  color: #ccc;
+  left: 10px;
+  top: -150px;
+  opacity: 0.3;
+  position: absolute;
+} */
+#toyproject .project__inner .project__box {
+  font-family: "SCoreDream";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  height: 440px;
+}
+#toyproject .project__inner .project__img {
+  width: 48%;
+  object-fit: contain;
+  position: relative;
+}
+#toyproject .project__inner .project__bg {
+  z-index: 0;
+  position: absolute;
+  top: 720px;
+  width: 880px;
+  height: 780px;
+  left: -320px;
+}
+#toyproject .project__inner .project__cont {
+  width: 47%;
+  height: 100%;
+}
+#toyproject .project__inner .project__cont .project__subTitle {
+  font-size: 36px;
+  line-height: 1;
+}
+#toyproject .project__inner .project__cont .project__period {
+  margin: 12px 0;
+  font-weight: 200;
+  font-size: 14px;
+}
+#toyproject .project__inner .project__cont .project__desc {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 1.6;
+  margin: 10px 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 100%;
+}
+#toyproject .project__inner .project__cont .project__main {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+#toyproject .project__inner .project__cont .project__main .project__sub {
+  width: 15%;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+#toyproject .project__inner .project__cont .project__main .project__text {
+  width: 83%;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#toyproject .project__inner .project__cont .project__view {
+}
+/* //toyprojects */

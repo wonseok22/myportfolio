@@ -5,194 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>한원석 포트폴리오</title>
-    <style>
-      html{
-        scroll-behavior: smooth;
-      }
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        color: #fff;
-      }
-      a {
-        text-decoration: none;
-      }
-      body {
-        -ms-overflow-style: none;
-        background-color: #000;
-        width: 100%;
-        height: 10000px;
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-      .container {
-        width: 1200px;
-        height: 100%;
-        margin: 0 auto;
-      }
-
-      /* header */
-      #header {
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 60px;
-        width: 100%;
-        align-items: center;  
-        margin-top: 20px;
-      }
-      #header .header__name {
-        font-size: 28px;
-        font-weight: bold;
-        padding-left: 20px;
-        float: left;
-      }
-      #header .header__menu {
-        font-size: 24px;
-        float: right;
-        width: 600px;
-        justify-content: space-between;
-        display: flex;
-        margin-right: 20px;
-      }
-      #header .header__menu a {
-        display: block;
-      }
-      /* //header */
-
-      /* title */
-      .title {
-        height: 1000px;
-        margin-top: 140px;
-        width: 100%;
-        background: url("./assets/img/title_bg.png") no-repeat;
-        background-size: 1920px 1250px;
-        background-position: -380px -300px;
-      }
-      .title p {
-        font-size: 180px;
-        line-height: 176px;
-        font-weight: bold;  
-      }
-
-
-      .title p:nth-child(2) {
-        padding-left: 300px;
-      }
-      .title p:nth-child(4) {
-        padding-left: 270px;
-      }
-      /* //title */
-
-
-      /* about */
-      #about {
-        padding-top: 100px;
-      }
-      #about img {
-        display: block;
-        margin: 0 auto;
-      }
-      #about #about__text {
-        margin-top: 100px;
-      }
-      #about #about__text p {
-        text-align: center;
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 1.6;
-      }
-      #about .about__info {
-        margin-top: 80px;
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-      }
-      #about .about__info .about__inner {
-        justify-content: center;
-        align-items: center;
-        width: 16%;
-        margin-right: 4%;
-      }
-      #about .about__info .about__inner:nth-child(5) {
-        margin-right: 0;
-      }
-      #about .about__info .about__inner .about__logo {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 30px;
-      }
-      #about .about__info .about__inner:nth-child(1) .about__logo {
-        left: 5px;
-
-      }
-      
-      #about .about__info .about__inner .about__cont {
-        margin-top: 20px;
-        font-size: 24px;
-        text-align: center;
-      }
-      /* //about */
-
-      /* archive */
-      #archive {
-        padding-top: 200px;
-        display: flex;
-        width: 100%;
-        height: 800px;
-        justify-content: space-between;
-        text-align: center;
-      }
-      #archive .archive__inner{
-        width: 44%;
-        height: 100%;
-      }
-      #archive .archive__inner .archive__img{
-        margin: 0 auto;
-        display: block;
-      }
-      #archive .archive__inner .archive__title{
-        display: inline-block;
-        
-        margin: 60px 0;
-        font-size: 120px;
-        font-weight: bold;
-        border-bottom: 1px solid #fff;
-
-      }
-      #archive .archive__inner .archive__desc{
-        font-weight: bold;
-        font-size: 32px;
-        margin-bottom: 50px;
-      }
-      #archive .archive__inner .archive__cont{
-        font-size: 24px;
-        text-align-last: left;
-        font-weight: 300;
-      }
-      /* //archive */
-      /* projects */
-      #project {
-        margin-top: 200px;
-        padding-top: 250px;
-        position: relative;
-      }
-      #project .project__title{
-        position: absolute;
-        left: 60%;
-        font-size: 180px;
-        border-width: bold;
-      }
-      #project .project__inner{
-        margin-top: 500px;
-      }
-      #project .project__inner .project__number{}
-      #project .project__inner .project__img{}
-      #project .project__inner .project__cont{}
-      /* //projects */
-    </style>
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/Style.css">
   </head>
   <body>
     <!-- header -->
@@ -266,31 +80,127 @@
         <div class="project__title">PROJECTS</div>
         <div class="project__inner">
           <div class="project__number">1.</div>
-          <img class="project__img" src="./assets/img/project1.png" alt="프로젝트 이미지">
-          <div class="project__cont">
-            <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
-            <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
-            <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
+          <div class="project__box">
+            <img class="project__bg" src="./assets/img/project_bg1.png" alt="프로젝트 배경">
+            <img class="project__img" src="./assets/img/project_img1.png" alt="프로젝트 이미지">
+            <div class="project__cont">
+              <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
+              <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
+              <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
+              </div>
+              <div class="project__main">
+                <div class="project__sub">주요 기능</div>
+                <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
+                  여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">나의 역할</div>
+                <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
+                  Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">기술 스택</div>
+                <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
+              </div>
+              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
             </div>
-            <div class="project__main">
-              <div class="project__sub">주요 기능</div>
-              <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
-                여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
+          </div>
+        <div class="project__inner">
+          <div class="project__number">2.</div>
+          <div class="project__box">
+            <div class="project__cont">
+              <div class="project__subTitle">반려동물 정보 공유 웹 서비스</div>
+              <div class="project__period">2022.01 ~ 2022.03 / 3인 프로젝트</div>
+              <div class="project__desc">PHP를 사용하여 구현한 반려동물 관련 커뮤니티와 정보를 제공하는  웹 사이트입니다.
+              </div>
+              <div class="project__main">
+                <div class="project__sub">주요 기능</div>
+                <div class="project__text">회원가입, 로그인,  로그이웃 기능, 블로그, 게시판  기능, 
+                  카카오맵 API와 공공데이터 API를 사용한 내 근처 동물병원 디스플레이 기능</div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">나의 역할</div>
+                <div class="project__text">회원가입 시 데이터베이스에 회원정보 생성, 카카오 맵 API와 공공데이터 API
+                  를 사용하여 동물병원 위치 디스플레이, OAuth를 사용한 네이버, 카카오 로
+                  그인 기능 삽입
+                  </div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">기술 스택</div>
+                <div class="project__text">php, HTML5, css, javascript, mysql, dothome(hosting)</div>
+              </div>
+              <a href="#" target="_blank" class="project__view">SITE VIEW</a>
+              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
             </div>
-            <div class="project__main">
-              <div class="project__sub">나의 역할</div>
-              <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
-                Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
-            </div>
-            <div class="project__main">
-              <div class="project__sub">기술 스택</div>
-              <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
-            </div>
-            <a href="#" target="_blank" class="project__view"></a>
+            <img class="project__bg" src="./assets/img/project_bg2.png" alt="프로젝트 배경">
+            <img class="project__img" src="./assets/img/project_img2.png" alt="프로젝트 이미지">
           </div>
         </div>
       </div>
       <!-- //projects -->
+      <!-- toyprojects -->
+      <div id="toyproject">
+        <div class="project__title"><p>TOY</p><p>PROJECTS</p></div>
+        <div class="project__inner">
+          <div class="project__number">1.</div>
+          <div class="project__box">
+            <img class="project__bg" src="./assets/img/project_bg1.png" alt="프로젝트 배경">
+            <img class="project__img" src="./assets/img/project_img1.png" alt="프로젝트 이미지">
+            <div class="project__cont">
+              <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
+              <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
+              <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
+              </div>
+              <div class="project__main">
+                <div class="project__sub">주요 기능</div>
+                <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
+                  여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">나의 역할</div>
+                <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
+                  Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">기술 스택</div>
+                <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
+              </div>
+              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+            </div>
+          </div>
+        <div class="project__inner">
+          <div class="project__number">2.</div>
+          <div class="project__box">
+            <div class="project__cont">
+              <div class="project__subTitle">반려동물 정보 공유 웹 서비스</div>
+              <div class="project__period">2022.01 ~ 2022.03 / 3인 프로젝트</div>
+              <div class="project__desc">PHP를 사용하여 구현한 반려동물 관련 커뮤니티와 정보를 제공하는  웹 사이트입니다.
+              </div>
+              <div class="project__main">
+                <div class="project__sub">주요 기능</div>
+                <div class="project__text">회원가입, 로그인,  로그이웃 기능, 블로그, 게시판  기능, 
+                  카카오맵 API와 공공데이터 API를 사용한 내 근처 동물병원 디스플레이 기능</div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">나의 역할</div>
+                <div class="project__text">회원가입 시 데이터베이스에 회원정보 생성, 카카오 맵 API와 공공데이터 API
+                  를 사용하여 동물병원 위치 디스플레이, OAuth를 사용한 네이버, 카카오 로
+                  그인 기능 삽입
+                  </div>
+              </div>
+              <div class="project__main">
+                <div class="project__sub">기술 스택</div>
+                <div class="project__text">php, HTML5, css, javascript, mysql, dothome(hosting)</div>
+              </div>
+              <a href="#" target="_blank" class="project__view">SITE VIEW</a>
+              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+            </div>
+            <img class="project__bg" src="./assets/img/project_bg2.png" alt="프로젝트 배경">
+            <img class="project__img" src="./assets/img/project_img2.png" alt="프로젝트 이미지">
+          </div>
+        </div>
+      </div>
+      <!-- //toyprojects -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
