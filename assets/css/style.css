@@ -13,6 +13,7 @@ a {
 }
 body {
   -ms-overflow-style: none;
+  scrollbar-width: none;
   background-color: #000;
   width: 100%;
   height: 10000px;
@@ -28,6 +29,7 @@ body {
 
 /* header */
 #header {
+  z-index: 10000;
   top: 0;
   left: 0;
   position: fixed;
@@ -169,15 +171,15 @@ body {
 /* //archive */
 /* projects */
 #project {
-  margin-top: 200px;
-  padding-top: 250px;
+  margin-top: 350px;
+  padding-top: 100px;
   position: relative;
 }
 #project .project__title {
   font-family: "inter";
   position: absolute;
   font-weight: bold;
-  left: 60%;
+  left: 58%;
   font-size: 180px;
   border-width: bold;
 }
@@ -190,7 +192,7 @@ body {
   height: 100px;
   line-height: 1;
   font-size: 100px;
-  font-family: "GmarketSans" !important;
+  font-family: "GmarketSansMedium" !important;
   font-weight: bold;
   position: relative;
   z-index: 9999;
@@ -218,16 +220,33 @@ body {
   object-fit: contain;
   position: relative;
 }
-#project .project__inner .project__bg {
+#project .project__inner .project__bg1 {
   z-index: 0;
   position: absolute;
-  top: 720px;
+  top: 600px;
   width: 880px;
   height: 780px;
   left: -320px;
 }
+#project .project__inner .project__bg2 {
+  z-index: 0;
+  position: absolute;
+  top: 1640px;
+  width: 840px;
+  height: 780px;
+  left: 600px;
+}
+#project .project__inner .project__bg3 {
+  z-index: 0;
+  position: absolute;
+  top: 2700px;
+  width: 780px;
+  height: 780px;
+  left: -220px;
+}
 #project .project__inner .project__cont {
   width: 47%;
+  z-index: 8000;
   height: 100%;
 }
 #project .project__inner .project__cont .project__subTitle {
@@ -271,7 +290,8 @@ body {
 /* //projects */
 /* toyprojects */
 #toyproject {
-  margin-top: 200px;
+  margin-top: 400px;
+  margin-bottom: 100px;
   padding-top: 250px;
   position: relative;
 }
@@ -296,7 +316,7 @@ body {
   height: 100px;
   line-height: 1;
   font-size: 100px;
-  font-family: "GmarketSans" !important;
+  font-family: "GmarketSansMedium" !important;
   font-weight: bold;
   position: relative;
   z-index: 9999;
@@ -324,13 +344,21 @@ body {
   object-fit: contain;
   position: relative;
 }
-#toyproject .project__inner .project__bg {
+#toyproject .project__inner .project__bg1 {
   z-index: 0;
   position: absolute;
   top: 720px;
   width: 880px;
   height: 780px;
-  left: -320px;
+  left: -250px;
+}
+#toyproject .project__inner .project__bg2 {
+  z-index: 0;
+  position: absolute;
+  top: 1750px;
+  width: 880px;
+  height: 880px;
+  left: 600px;
 }
 #toyproject .project__inner .project__cont {
   width: 47%;
@@ -375,3 +403,11 @@ body {
 #toyproject .project__inner .project__cont .project__view {
 }
 /* //toyprojects */
+
+/* footer */
+#footer {
+  width: 100%;
+  height: 900px;
+  background-color: #55eade;
+}
+/* //footer */
