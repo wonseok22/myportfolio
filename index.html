@@ -16,7 +16,7 @@
         <a href="#about">ABOUT</a>
         <a href="#archive">ARCHIVING</a>
         <a href="#project">PROJECTS</a>
-        <a href="#">SKILLS</a>
+        <a href="#footer">SKILLS</a>
       </div>
     </header>
     <!-- //header -->
@@ -236,7 +236,18 @@
     <!-- //container -->
     <!-- footer -->
     <footer id="footer">
-      
+      <section class="cont">
+        <div class="footer__text">
+          <div class="footer__title">SKILLS</div>
+          <div class="footer__contact"></div>
+        </div>
+        <div class="footer__inner">
+          <div class="footer__be"></div>
+          <div class="footer__fe"></div>
+          <div class="footer__devops"></div>
+        </div>
+        <div class="footer__copyright">WonSeok All rights reserved &copy; 2022</div>
+      </section>
     </footer>
     <!-- //footer -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -246,6 +257,7 @@
         let flag = true  // text animation 중복실행 방지
 
         window.addEventListener('scroll', () => {  // 스크롤 
+          console.log(window.scrollY)
           if (window.scrollY > 900 && flag){
               $(document).ready(function() {
                 flag = false

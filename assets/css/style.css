@@ -6,12 +6,13 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 body {
+  color: #fff;
   -ms-overflow-style: none;
   scrollbar-width: none;
   background-color: #000;
@@ -407,7 +408,48 @@ body {
 /* footer */
 #footer {
   width: 100%;
-  height: 900px;
+  height: 1000px;
   background-color: #55eade;
+}
+#footer .cont {
+  width: 1920px;
+  height: 100%;
+  margin: 0 auto;
+  color: #000 !important;
+}
+#footer .cont .footer__text {
+  display: flex;
+}
+#footer .cont .footer__text .footer__title {
+  font-size: 200px;
+  font-weight: 900;
+  font-family: "inter";
+  line-height: 1;
+  width: 50%;
+  padding-left: 100px;
+  padding-top: 100px;
+}
+#footer .cont .footer__inner {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 30px;
+  display: flex;
+}
+#footer .cont .footer__inner div {
+  margin-top: 150px;
+  width: 33%;
+  height: 70%;
+}
+#footer .cont .footer__inner div:nth-child(1) {
+  border-right: 3px solid #000;
+}
+#footer .cont .footer__inner div:nth-child(2) {
+  border-right: 3px solid #000;
+}
+#footer .cont .footer__copyright {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
 }
 /* //footer */
