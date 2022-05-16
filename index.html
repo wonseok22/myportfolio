@@ -242,9 +242,28 @@
           <div class="footer__contact"></div>
         </div>
         <div class="footer__inner">
-          <div class="footer__be"></div>
-          <div class="footer__fe"></div>
-          <div class="footer__devops"></div>
+          <div class="footer__be">
+            <img src="./assets/icons/django-plain-wordmark.svg" alt="Django">
+            <img src="./assets/icons/mysql-original-wordmark.svg" alt="mySQL">
+            <img src="./assets/icons/nodejs-original-wordmark.svg" alt="nodejs">
+            <img src="./assets/icons/postgresql-original-wordmark.svg" alt="postgresql">
+            <img src="./assets/icons/python-original-wordmark.svg" alt="python">
+            <img src="./assets/icons/c-plain.svg" alt="C">
+          </div>
+          <div class="footer__fe">
+            <img src="./assets/icons/html5-original-wordmark.svg" alt="html">
+            <img src="./assets/icons/css3-original-wordmark.svg" alt="css">
+            <img src="./assets/icons/javascript-original.svg" alt="javascript">
+            <img src="./assets/icons/jquery-original-wordmark.svg" alt="jquery">
+            <img src="./assets/icons/php-original.svg" alt="php">
+            <img src="./assets/icons/react-original-wordmark.svg" alt="react">
+            <img src="./assets/icons/sass-original.svg" alt="sass">
+          </div>
+          <div class="footer__devops">
+            <img src="./assets/icons/git-original-wordmark.svg" alt="git">
+            <img src="./assets/icons/github-original-wordmark.svg" alt="github">
+            <img src="./assets/icons/figma-original.svg" alt="figma">
+          </div>
         </div>
         <div class="footer__copyright">WonSeok All rights reserved &copy; 2022</div>
       </section>
@@ -257,7 +276,8 @@
         let flag = true  // text animation 중복실행 방지
 
         window.addEventListener('scroll', () => {  // 스크롤 
-          console.log(window.scrollY)
+
+          
           if (window.scrollY > 900 && flag){
               $(document).ready(function() {
                 flag = false

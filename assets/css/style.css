@@ -51,6 +51,7 @@ body {
   width: 600px;
   justify-content: space-between;
   display: flex;
+  font-weight: bold;
   margin-right: 20px;
 }
 #header .header__menu a {
@@ -439,6 +440,7 @@ body {
   margin-top: 150px;
   width: 33%;
   height: 70%;
+  padding-left: 75px;
 }
 #footer .cont .footer__inner div:nth-child(1) {
   border-right: 3px solid #000;
@@ -451,5 +453,9 @@ body {
   font-weight: bold;
   font-size: 22px;
   text-align: center;
+}
+#footer .cont .footer__inner img {
+  width: 28%;
+  height: 25%;
 }
 /* //footer */
