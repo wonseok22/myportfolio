@@ -1,314 +1,430 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>한원석 포트폴리오</title>
-    <link rel="stylesheet" href="./assets/css/font.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-  </head>
-  <body>
-    <!-- header -->
-    <header id="header">
-      <div class="header__name"><a href="./index.html">Han WonSeok</a></div>
-      <div class="header__menu">
-        <a href="#about">ABOUT</a>
-        <a href="#archive">ARCHIVING</a>
-        <a href="#project">PROJECTS</a>
-        <a href="#footer">SKILLS</a>
-      </div>
-    </header>
-    <!-- //header -->
 
-    <!-- container -->
-    <div class="container">
-      <!-- title -->
-      <div class="title">
-        <p>USER</p>
-        <p>FRIENDLY</p>
-        <p>BACK-END</p>
-        <p>DEVELOPER</p>
-      </div>
-      <!-- //title -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한원석 포트폴리오</title>
+  <link rel="stylesheet" href="./assets/css/font.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+  <link href="./assets/css/loco_scroll.css" rel="stylesheet">
+</head>
 
-      <!-- about -->
-      <div id="about">
-        <img src="./assets/img/face.png" alt="my picture" />
-        <div id="about__text">
-        </div>
-        <div class="about__info">
-          <div class="about__inner">
-            <img src="./assets/img/about_logo1.png" alt="이름" class="about__logo"></img>
-            <div class="about__cont">한원석</div>
-          </div>
-          <div class="about__inner">
-            <img src="./assets/img/about_logo2.png" alt="거주지" class="about__logo"></img>
-            <div class="about__cont">경기 안산시</div>
-          </div>
-          <div class="about__inner">
-            <img src="./assets/img/about_logo3.png" alt="학력" class="about__logo"></img>
-            <div class="about__cont">홍익대학교<br />(컴퓨터공학과)</div>
-          </div>
-          <div class="about__inner">
-            <img src="./assets/img/about_logo4.png" alt="번호" class="about__logo"></img>
-            <div class="about__cont">010-4613-4649</div>
-          </div>
-          <div class="about__inner">
-            <img src="./assets/img/about_logo5.png" alt="생년월일" class="about__logo"></img>
-            <div class="about__cont">1997.05.25</div>
-          </div>
-        </div>
-      </div>
-      <!-- //about -->
-      <!-- archive -->
-      <div id="archive">
-        <div class="archive__inner">
-          <img class="archive__img" src="./assets/img/git.png" alt="GITHUB IMG">
-          <a class="archive__title" href="https://github.com/wonseok22" target='_blank'>GIT HUB</a>
-          <div class="archive__desc">소스 코드 저장소입니다.</div>
-          <div class="archive__cont">과거 진행했던 프로젝트의 소스 코드와 설명, 전공 강의를 수강하며 수행했던 과제나 팀 프로젝트, 혼자 학습을 진행하며 공부했던 소스 코드들을 저장해 놓은 소스 코드 저장소입니다.</div>
-        </div>
-        <div class="archive__inner">
-          <img class="archive__img" src="./assets/img/blog.png" alt="BLOG IMG">
-          <a class="archive__title" href="https://recordofwonseok.tistory.com/" target='_blank'>BLOG</a>
-          <div class="archive__desc">공부 기록들을 남긴 블로그입니다</div>
-          <div class="archive__cont">알고리즘 코딩 문제에 대한 풀이와 해설, CS 지식을 학습했던 흔적, 여러 언어들과 개발 도구들을 다루며 발생했던 에러나 이를 해결하며 성장했던 점들을 기록하는 블로그입니다. </div>
-        </div>
-      </div>
-      <!-- //archive -->
-      <!-- projects -->
-      <div id="project">
-        <div class="project__title">PROJECTS</div>
-        <div class="project__inner">
-          <p class="project__number">1.</p>
-          <div class="project__box">
-            <img class="project__bg1" src="./assets/img/project_bg1.png" alt="프로젝트 배경">
-            <img class="project__img" src="./assets/img/project_img1.png" alt="프로젝트 이미지">
-            <div class="project__cont">
-              <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
-              <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
-              <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
-              </div>
-              <div class="project__main">
-                <div class="project__sub">주요 기능</div>
-                <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
-                  여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">나의 역할</div>
-                <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
-                  Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">기술 스택</div>
-                <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
-              </div>
-              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="project__inner">
-          <div class="project__number">2.</div>
-          <div class="project__box">
-            <div class="project__cont">
-              <div class="project__subTitle">반려동물 정보 공유 웹 서비스</div>
-              <div class="project__period">2022.01 ~ 2022.03 / 3인 프로젝트</div>
-              <div class="project__desc">PHP를 사용하여 구현한 반려동물 관련 커뮤니티와 정보를 제공하는  웹 사이트입니다.
-              </div>
-              <div class="project__main">
-                <div class="project__sub">주요 기능</div>
-                <div class="project__text">회원가입, 로그인,  로그이웃 기능, 블로그, 게시판  기능, 
-                  카카오맵 API와 공공데이터 API를 사용한 내 근처 동물병원 디스플레이 기능</div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">나의 역할</div>
-                <div class="project__text">회원가입 시 데이터베이스에 회원정보 생성, 카카오 맵 API와 공공데이터 API
-                  를 사용하여 동물병원 위치 디스플레이, OAuth를 사용한 네이버, 카카오 로
-                  그인 기능 삽입
-                  </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">기술 스택</div>
-                <div class="project__text">php, HTML5, css, javascript, mysql, dothome(hosting)</div>
-              </div>
-              <a href="#" target="_blank" class="project__view">SITE VIEW</a>
-              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
-            </div>
-            <img class="project__bg2" src="./assets/img/project_bg2.png" alt="프로젝트 배경">
-            <img class="project__img" src="./assets/img/project_img2.png" alt="프로젝트 이미지">
-          </div>
-        </div>
-        <!--  -->
-        <div class="project__inner">
-          <p class="project__number">3.</p>
-          <div class="project__box">
-            <img class="project__bg3" src="./assets/img/project_bg3.png" alt="프로젝트 배경">
-            <img class="project__img" src="./assets/img/project_img3.png" alt="프로젝트 이미지">
-            <div class="project__cont">
-              <div class="project__subTitle">React를 사용한 웹 사이트 구현</div>
-              <div class="project__period">2022.03 ~ 2022.04 / 1인 프로젝트</div>
-              <div class="project__desc">리액트를 공부하며 제작한 포트폴리오형 웹 사이트입니다.
-                간단한 페이지 뷰, 유튜브 API를 사용하여 구현한 페이지 등이 있습니다.
-                
-              </div>
-              <div class="project__main">
-                <div class="project__sub">주요 기능</div>
-                <div class="project__text">포트폴리오형 웹 사이트, 유튜브 API를 이용한 유튜브 검색기능 </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">나의 역할</div>
-                <div class="project__text">함수형  컴포넌트를 사용하여 SPA 구현, state에 변화에 따른 페이지
-                  변화, </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">기술 스택</div>
-                <div class="project__text">React.js, Javascript, HTML5, sass, youtube API</div>
-              </div>
-              <a href="#" target="_blank" class="project__view">SITE VIEW</a>
-              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
-            </div>
-          </div>
-          </div>
-
-      </div>
-      <!-- //projects -->
-      <!-- toyprojects -->
-      <div id="toyproject">
-        <div class="project__title"><p>TOY</p><p>PROJECTS</p></div>
-        <div class="project__inner">
-          <div class="project__number">1.</div>
-          <div class="project__box">
-            <img class="project__bg1" src="./assets/img/project_bg4.png" alt="프로젝트 배경">
-            <img class="project__img" src="./assets/img/project_img4.png" alt="프로젝트 이미지">
-            <div class="project__cont">
-              <div class="project__subTitle">Django로 REST API서버 구현하기</div>
-              <div class="project__period">2022.04 ~ 2022.04 </div>
-              <div class="project__desc">Django를 사용해서 구현한 REST API 서버입니다.
-                간단한 데이터들에 대해 CRUD Operation을 수행할 수 있습니다.
-              </div>
-              <div class="project__main">
-                <div class="project__sub">주요 기능</div>
-                <div class="project__text">REST API 서버의 기능과 간단한 데이터에 대해  CRUD 작업 수행, </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">얻은 점</div>
-                <div class="project__text">REST API에 대한 구체적인 이해와 HTTP상에서 데이터 흐름의 이해.
-                  Django의 urls에서의 라우팅 처리방법..</div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">기술 스택</div>
-                <div class="project__text">Python, Django, Django-restframework</div>
-              </div>
-              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
-            </div>
-          </div>
-        </div>
-        <div class="project__inner">
-          <div class="project__number">2.</div>
-          <div class="project__box">
-            <div class="project__cont">
-              <div class="project__subTitle">Javascript로 구현한 기능 및 게임</div>
-              <div class="project__period">2022.02 ~ 2022.04 </div>
-              <div class="project__desc">Javascript를 공부하며 간단하게 만들어 본 기능들입니다.MP3 플레이어, 영타 연습, 카드 뒤집기 게임, 테트리스가 있습니다. 
-              </div>
-              <div class="project__main">
-                <div class="project__sub">주요 기능</div>
-                <div class="project__text">MP3 플레이어, 영컴 타자연습, 카드 뒤집기 게임, 테트리스 등 여러 기능들을 구현했습니다.
-                  공부를 진행하며 틈틈이 추가할 예정입니다. </div>
-              </div>
-              <div class="project__main">
-                <div class="project__sub">기술 스택</div>
-                <div class="project__text">Javascript, HTML5, CSS
-                  </div>
-              </div>
-              <a href="#" target="_blank" class="project__view">SITE VIEW</a>
-              <a href="#" target="_blank" class="project__view">CODE VIEW</a>
-            </div>
-            <img class="project__bg2" src="./assets/img/project_bg5.png" alt="프로젝트 배경">
-            <img class="project__img" src="./assets/img/project_img5.png" alt="프로젝트 이미지">
-          </div>
-        </div>
-      </div>
-      <!-- //toyprojects -->
-    </div>
-    <!-- //container -->
-    <!-- footer -->
-    <footer id="footer">
-      <section class="cont">
-        <div class="footer__text">
-          <div class="footer__title">SKILLS</div>
-          <div class="footer__contact"></div>
-        </div>
-        <div class="footer__inner">
-          <div class="footer__be">
-            <img src="./assets/icons/django-plain-wordmark.svg" alt="Django">
-            <img src="./assets/icons/mysql-original-wordmark.svg" alt="mySQL">
-            <img src="./assets/icons/nodejs-original-wordmark.svg" alt="nodejs">
-            <img src="./assets/icons/postgresql-original-wordmark.svg" alt="postgresql">
-            <img src="./assets/icons/python-original-wordmark.svg" alt="python">
-            <img src="./assets/icons/c-plain.svg" alt="C">
-          </div>
-          <div class="footer__fe">
-            <img src="./assets/icons/html5-original-wordmark.svg" alt="html">
-            <img src="./assets/icons/css3-original-wordmark.svg" alt="css">
-            <img src="./assets/icons/javascript-original.svg" alt="javascript">
-            <img src="./assets/icons/jquery-original-wordmark.svg" alt="jquery">
-            <img src="./assets/icons/php-original.svg" alt="php">
-            <img src="./assets/icons/react-original-wordmark.svg" alt="react">
-            <img src="./assets/icons/sass-original.svg" alt="sass">
-          </div>
-          <div class="footer__devops">
-            <img src="./assets/icons/git-original-wordmark.svg" alt="git">
-            <img src="./assets/icons/github-original-wordmark.svg" alt="github">
-            <img src="./assets/icons/figma-original.svg" alt="figma">
-          </div>
-        </div>
-        <div class="footer__copyright">WonSeok All rights reserved &copy; 2022</div>
-      </section>
-    </footer>
-    <!-- //footer -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
-    <script type="text/javascript">
-
-        let flag = true  // text animation 중복실행 방지
-
-        window.addEventListener('scroll', () => {  // 스크롤 
-
-          
-          if (window.scrollY > 900 && flag){
-              $(document).ready(function() {
-                flag = false
-                var text = document.getElementById("about__text");
-
-                var typewriter = new Typewriter(text, {
-                    cursor : "",
-                    delay:70
-                });
-
-                typewriter.typeString('<p>안녕하세요.</p>')
-                    .pauseFor(100)
-                    .typeString('<p>새로운 것을 배우기 위해 끊임없이 공부하고</p>')
-                    .pauseFor(100)
-                    .typeString('<p>사람들을 위한 서비스를 개발하고 싶은 주니어 개발자 한원석입니다.</p>')
-                    .pauseFor(100)
-                    .typeString('<p>재사용성이 높고 가독성이 좋은 코딩을 추구합니다.</p>')
-                    .pauseFor(100)
-                    .typeString('<p>단단한 CS 지식을 기반으로, 새로운 것을 배우기 위한 열정까지 겸비하고 있는</p>')
-                    .pauseFor(100)
-                    .typeString("<p>'배울 준비가 된' 개발자입니다.</p>")
-                    .pauseFor(100)
-                    .start();
-
-            });
-          }
-        });
-
+<body id="body">
+        <!-- header -->
+        <header id="header">
+          <h1>WonSeok</h1>
+          <nav id="nav">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">ARCHIVING</a></li>
+              <li><a href="#">PROJECTS</a></li>
+              <li><a href="#">SKILLS</a></li>
+            </ul>
+          </nav>
+        </header>
+        <!-- //header -->
       
+        <!-- container -->
+        <div class="container">
+          <!-- title -->
+          <section id="section1">
+            <canvas id="sec1_bg" data-0="opacity:1" data-500="opacity:0"></canvas>
+            <div class="sec1">
+              <div class="sec1_text">
+                <div data-0="margin-left: 5vw;" data-1000="margin-left: -5vw;">USER</div>
+                <div>FRIENDLY</div>
+                <div>BACK-END</div>
+                <div>DEVELOPER</div>
+              </div>
+            </div>
+          </section>
+          <!-- //title -->
+      
+          <!-- about -->
+          <div id="about">
+            <img src="./assets/img/face.png" alt="my picture" />
+            <div id="about__text">
+            </div>
+            <div class="about__info">
+              <div class="about__inner">
+                <img src="./assets/img/about_logo1.png" alt="이름" class="about__logo"></img>
+                <div class="about__cont">한원석</div>
+              </div>
+              <div class="about__inner">
+                <img src="./assets/img/about_logo2.png" alt="거주지" class="about__logo"></img>
+                <div class="about__cont">경기 안산시</div>
+              </div>
+              <div class="about__inner">
+                <img src="./assets/img/about_logo3.png" alt="학력" class="about__logo"></img>
+                <div class="about__cont">홍익대학교<br />(컴퓨터공학과)</div>
+              </div>
+              <div class="about__inner">
+                <img src="./assets/img/about_logo4.png" alt="번호" class="about__logo"></img>
+                <div class="about__cont">010-4613-4649</div>
+              </div>
+              <div class="about__inner">
+                <img src="./assets/img/about_logo5.png" alt="생년월일" class="about__logo"></img>
+                <div class="about__cont">1997.05.25</div>
+              </div>
+            </div>
+          </div>
+          <!-- //about -->
+          <!-- archive -->
+          <div id="archive">
+            <div class="archive__inner">
+              <img class="archive__img" src="./assets/img/git.png" alt="GITHUB IMG">
+              <a class="archive__title" href="https://github.com/wonseok22" target='_blank'>GIT HUB</a>
+              <div class="archive__desc">소스 코드 저장소입니다.</div>
+              <div class="archive__cont">과거 진행했던 프로젝트의 소스 코드와 설명, 전공 강의를 수강하며 수행했던 과제나 팀 프로젝트, 혼자 학습을 진행하며 공부했던 소스 코드들을 저장해 놓은
+                소스 코드 저장소입니다.</div>
+            </div>
+            <div class="archive__inner">
+              <img class="archive__img" src="./assets/img/blog.png" alt="BLOG IMG">
+              <a class="archive__title" href="https://recordofwonseok.tistory.com/" target='_blank'>BLOG</a>
+              <div class="archive__desc">공부 기록들을 남긴 블로그입니다</div>
+              <div class="archive__cont">알고리즘 코딩 문제에 대한 풀이와 해설, CS 지식을 학습했던 흔적, 여러 언어들과 개발 도구들을 다루며 발생했던 에러나 이를 해결하며 성장했던 점들을
+                기록하는 블로그입니다. </div>
+            </div>
+          </div>
+          <!-- //archive -->
+          <!-- projects -->
+          <!-- <div id="project">
+              <div class="project__title">PROJECTS</div>
+              <div class="project__inner">
+                <p class="project__number">1.</p>
+                <div class="project__box">
+                  <img class="project__bg1" src="./assets/img/project_bg1.png" alt="프로젝트 배경">
+                  <img class="project__img" src="./assets/img/project_img1.png" alt="프로젝트 이미지">
+                  <div class="project__cont">
+                    <div class="project__subTitle">졸업요건 조회 및 강의 추천 서비스</div>
+                    <div class="project__period">2021.03 ~ 2021.12 / 3인 프로젝트</div>
+                    <div class="project__desc">홍익대학교 학우들의 졸업요건 충족 여부를 조회하고 해당 이수분야에 맞는 강의를 추천해주는 웹 서비스 입니다.
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">주요 기능</div>
+                      <div class="project__text">교내 클레스넷 로그인 정보를 사용한 이수학점 크롤링 및 이수요건 충족
+                        여부 확인 기능, 강의 별 평점을 활용한 개설 강의 추천 시스템 </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">나의 역할</div>
+                      <div class="project__text">로그인 시 ChromeDriver를 활용한 사용자 이수학점 크롤링, 데이터 가공 및 
+                        Django Template 전달 및 사용, HTML, CSS를 사용한 페이지 디자인.</div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">기술 스택</div>
+                      <div class="project__text">Python, Django, HTML5, css, aws RDS, mySQL workbench</div>
+                    </div>
+                    <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+                  </div>
+                </div>
+              </div> -->
+          <!--  -->
+          <!-- <div class="project__inner">
+                <div class="project__number">2.</div>
+                <div class="project__box">
+                  <div class="project__cont">
+                    <div class="project__subTitle">반려동물 정보 공유 웹 서비스</div>
+                    <div class="project__period">2022.01 ~ 2022.03 / 3인 프로젝트</div>
+                    <div class="project__desc">PHP를 사용하여 구현한 반려동물 관련 커뮤니티와 정보를 제공하는  웹 사이트입니다.
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">주요 기능</div>
+                      <div class="project__text">회원가입, 로그인,  로그이웃 기능, 블로그, 게시판  기능, 
+                        카카오맵 API와 공공데이터 API를 사용한 내 근처 동물병원 디스플레이 기능</div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">나의 역할</div>
+                      <div class="project__text">회원가입 시 데이터베이스에 회원정보 생성, 카카오 맵 API와 공공데이터 API
+                        를 사용하여 동물병원 위치 디스플레이, OAuth를 사용한 네이버, 카카오 로
+                        그인 기능 삽입
+                        </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">기술 스택</div>
+                      <div class="project__text">php, HTML5, css, javascript, mysql, dothome(hosting)</div>
+                    </div>
+                    <a href="#" target="_blank" class="project__view">SITE VIEW</a>
+                    <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+                  </div>
+                  <img class="project__bg2" src="./assets/img/project_bg2.png" alt="프로젝트 배경">
+                  <img class="project__img" src="./assets/img/project_img2.png" alt="프로젝트 이미지">
+                </div>
+              </div> -->
+          <!--  -->
+          <!-- <div class="project__inner">
+                <p class="project__number">3.</p>
+                <div class="project__box">
+                  <img class="project__bg3" src="./assets/img/project_bg3.png" alt="프로젝트 배경">
+                  <img class="project__img" src="./assets/img/project_img3.png" alt="프로젝트 이미지">
+                  <div class="project__cont">
+                    <div class="project__subTitle">React를 사용한 웹 사이트 구현</div>
+                    <div class="project__period">2022.03 ~ 2022.04 / 1인 프로젝트</div>
+                    <div class="project__desc">리액트를 공부하며 제작한 포트폴리오형 웹 사이트입니다.
+                      간단한 페이지 뷰, 유튜브 API를 사용하여 구현한 페이지 등이 있습니다.
+                      
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">주요 기능</div>
+                      <div class="project__text">포트폴리오형 웹 사이트, 유튜브 API를 이용한 유튜브 검색기능 </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">나의 역할</div>
+                      <div class="project__text">함수형  컴포넌트를 사용하여 SPA 구현, state에 변화에 따른 페이지
+                        변화, </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">기술 스택</div>
+                      <div class="project__text">React.js, Javascript, HTML5, sass, youtube API</div>
+                    </div>
+                    <a href="#" target="_blank" class="project__view">SITE VIEW</a>
+                    <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+                  </div>
+                </div>
+                </div> -->
+      
+        <!-- </div> -->
+        <!-- //projects -->
+        <!-- toyprojects -->
+        <!-- <div id="toyproject">
+              <div class="project__title"><p>TOY</p><p>PROJECTS</p></div>
+              <div class="project__inner">
+                <div class="project__number">1.</div>
+                <div class="project__box">
+                  <img class="project__bg1" src="./assets/img/project_bg4.png" alt="프로젝트 배경">
+                  <img class="project__img" src="./assets/img/project_img4.png" alt="프로젝트 이미지">
+                  <div class="project__cont">
+                    <div class="project__subTitle">Django로 REST API서버 구현하기</div>
+                    <div class="project__period">2022.04 ~ 2022.04 </div>
+                    <div class="project__desc">Django를 사용해서 구현한 REST API 서버입니다.
+                      간단한 데이터들에 대해 CRUD Operation을 수행할 수 있습니다.
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">주요 기능</div>
+                      <div class="project__text">REST API 서버의 기능과 간단한 데이터에 대해  CRUD 작업 수행, </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">얻은 점</div>
+                      <div class="project__text">REST API에 대한 구체적인 이해와 HTTP상에서 데이터 흐름의 이해.
+                        Django의 urls에서의 라우팅 처리방법..</div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">기술 스택</div>
+                      <div class="project__text">Python, Django, Django-restframework</div>
+                    </div>
+                    <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project__inner">
+                <div class="project__number">2.</div>
+                <div class="project__box">
+                  <div class="project__cont">
+                    <div class="project__subTitle">Javascript로 구현한 기능 및 게임</div>
+                    <div class="project__period">2022.02 ~ 2022.04 </div>
+                    <div class="project__desc">Javascript를 공부하며 간단하게 만들어 본 기능들입니다.MP3 플레이어, 영타 연습, 카드 뒤집기 게임, 테트리스가 있습니다. 
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">주요 기능</div>
+                      <div class="project__text">MP3 플레이어, 영컴 타자연습, 카드 뒤집기 게임, 테트리스 등 여러 기능들을 구현했습니다.
+                        공부를 진행하며 틈틈이 추가할 예정입니다. </div>
+                    </div>
+                    <div class="project__main">
+                      <div class="project__sub">기술 스택</div>
+                      <div class="project__text">Javascript, HTML5, CSS
+                        </div>
+                    </div>
+                    <a href="#" target="_blank" class="project__view">SITE VIEW</a>
+                    <a href="#" target="_blank" class="project__view">CODE VIEW</a>
+                  </div>
+                  <img class="project__bg2" src="./assets/img/project_bg5.png" alt="프로젝트 배경">
+                  <img class="project__img" src="./assets/img/project_img5.png" alt="프로젝트 이미지">
+                </div>
+              </div>
+            </div> -->
+        <!-- //toyprojects -->
+        <!-- </div> -->
+        <!-- //container -->
+        <!-- footer -->
+        <!-- <footer id="footer">
+          <section class="cont">
+            <div class="footer__text">
+              <div class="footer__title">SKILLS</div>
+              <div class="footer__contact"></div>
+            </div>
+            <div class="footer__inner">
+              <div class="footer__be">
+                <img src="./assets/icons/django-plain-wordmark.svg" alt="Django">
+                <img src="./assets/icons/mysql-original-wordmark.svg" alt="mySQL">
+                <img src="./assets/icons/nodejs-original-wordmark.svg" alt="nodejs">
+                <img src="./assets/icons/postgresql-original-wordmark.svg" alt="postgresql">
+                <img src="./assets/icons/python-original-wordmark.svg" alt="python">
+                <img src="./assets/icons/c-plain.svg" alt="C">
+              </div>
+              <div class="footer__fe">
+                <img src="./assets/icons/html5-original-wordmark.svg" alt="html">
+                <img src="./assets/icons/css3-original-wordmark.svg" alt="css">
+                <img src="./assets/icons/javascript-original.svg" alt="javascript">
+                <img src="./assets/icons/jquery-original-wordmark.svg" alt="jquery">
+                <img src="./assets/icons/php-original.svg" alt="php">
+                <img src="./assets/icons/react-original-wordmark.svg" alt="react">
+                <img src="./assets/icons/sass-original.svg" alt="sass">
+              </div>
+              <div class="footer__devops">
+                <img src="./assets/icons/git-original-wordmark.svg" alt="git">
+                <img src="./assets/icons/github-original-wordmark.svg" alt="github">
+                <img src="./assets/icons/figma-original.svg" alt="figma">
+              </div>
+            </div>
+            <div class="footer__copyright">WonSeok All rights reserved &copy; 2022</div>
+          </section>
+        </footer> -->
+  <!-- //footer -->
 
-        
-    </script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script src="./assets/js/jquery.smoothwheel.js"></script>
+  <script>
+    var s = skrollr.init({
+      smoothScrolling: true
+    });
+    // window.addEventListener("scroll", () => { 
+    //   console.log(window.scrollY)
+    // })
+
+    //화면 생성
+    let scene = new THREE.Scene();
+    scene.fog = new THREE.Fog(0x000000, 30, 150);
+
+    //카메라 설정
+    let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 150);
+    camera.position.y = 400;
+    camera.position.z = 400;
+
+    //렌더링 설정
+    let renderer = new THREE.WebGLRenderer({
+      canvas: document.querySelector("canvas"),
+      alpha: true
+    });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
+
+    //
+    var points = [
+      [68.5, 185.5],
+      [1, 262.5],
+      [270.9, 281.9],
+      [345.5, 212.8],
+      [178, 155.7],
+      [240.3, 72.3],
+      [153.4, 0.6],
+      [52.6, 53.3],
+      [68.5, 185.5]
+    ];
+    for (var i = 0; i < points.length; i++) {
+      var x = points[i][0];
+      var y = Math.random() * 100;
+      var z = points[i][1];
+      points[i] = new THREE.Vector3(x, y, z);
+    }
+    var path = new THREE.CatmullRomCurve3(points);
+    path.closed = true;
+
+    var tubeDetail = 100;
+    var circlesDetail = 40;
+    var radius = 4;
+    var frames = path.computeFrenetFrames(tubeDetail, true);
+    var geometry = new THREE.Geometry();
+    var color = new THREE.Color(0x000000);
+
+    for (var i = 0; i < tubeDetail; i++) {
+      var normal = frames.normals[i];
+      var binormal = frames.binormals[i];
+      var index = i / tubeDetail;
+      var p = path.getPointAt(index);
+
+      for (var j = 0; j < circlesDetail; j++) {
+        var position = p.clone();
+        var angle = (j / circlesDetail) * Math.PI * 2 + (index * Math.PI * 5);
+        var sin = Math.sin(angle);
+        var cos = -Math.cos(angle);
+
+        var normalPoint = new THREE.Vector3(0, 0, 0);
+        normalPoint.x = (cos * normal.x + sin * binormal.x);
+        normalPoint.y = (cos * normal.y + sin * binormal.y);
+        normalPoint.z = (cos * normal.z + sin * binormal.z);
+        normalPoint.multiplyScalar(radius);
+
+        position.add(normalPoint);
+        var color = new THREE.Color("hsl(" + (index * 360 * 4) + ", 100%, 50%)");
+        geometry.colors.push(color);
+        geometry.vertices.push(position);
+      }
+    }
+    var material = new THREE.PointsMaterial({
+      size: 0.2,
+      vertexColors: THREE.VertexColors
+    });
+    var tube = new THREE.Points(geometry, material);
+    scene.add(tube);
+
+    var percentage = 0;
+
+    //애니메이션 설정
+    function animate() {
+      requestAnimationFrame(animate);
+
+      percentage += 0.0003;
+      var p1 = path.getPointAt(percentage % 1);
+      var p2 = path.getPointAt((percentage + 0.01) % 1);
+      camera.position.set(p1.x, p1.y, p1.z);
+      camera.lookAt(p2);
+
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    function onWindowResize() {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    }
+    window.addEventListener('resize', onWindowResize);
+
+
+    let flag = true // text animation 중복실행 방지
+
+    $(document).ready(function () {
+      flag = false
+      var text = document.getElementById("about__text");
+
+      var typewriter = new Typewriter(text, {
+        cursor: "",
+        delay: 100
+      });
+
+      typewriter.typeString('<p>안녕하세요.</p>')
+        .pauseFor(200)
+        .typeString('<p>새로운 것을 배우기 위해 끊임없이 공부하고</p>')
+        .pauseFor(200)
+        .typeString('<p>사람들을 위한 서비스를 개발하고 싶은 주니어 개발자 한원석입니다.</p>')
+        .pauseFor(200)
+        .typeString('<p>재사용성이 높고 가독성이 좋은 코딩을 추구합니다.</p>')
+        .pauseFor(200)
+        .typeString('<p>단단한 CS 지식을 기반으로, 새로운 것을 배우기 위한 열정까지 겸비하고 있는</p>')
+        .pauseFor(200)
+        .typeString("<p>'배울 준비가 된' 개발자입니다.</p>")
+        .pauseFor(200)
+        .start();
+
+    });
+  </script>
+</body>
+
 </html>

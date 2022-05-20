@@ -23,8 +23,8 @@ body {
   height: 10000px;
 }
 /* ::-webkit-scrollbar {
-  display: none;
-} */
+    display: none;
+  } */
 /* scroll */
 .scroll {
   position: fixed;
@@ -52,9 +52,13 @@ body {
   color: #fff;
   font-weight: bold;
 }
+#nav ul {
+  justify-content: space-between;
+}
 #nav li {
   display: inline-block;
 }
+
 #nav li a {
   color: #fff;
   font-family: Abel;
@@ -69,7 +73,10 @@ body {
   background: #000;
   height: 110vh;
 }
-
+#sec1_bg {
+  width: 100vw;
+  height: 110vh;
+}
 .sec1 {
   display: flex;
   align-items: center;
@@ -82,7 +89,7 @@ body {
   z-index: 10;
 }
 .sec1_text {
-  margin-top: 5vw;
+  margin-top: 2vw;
 }
 .sec1_text > div {
   font-size: 7vw;
@@ -91,86 +98,78 @@ body {
   font-weight: 700;
 }
 .sec1_text > div:nth-child(1) {
-  margin-left: 5vw;
+  margin-left: 7vw;
 }
 .sec1_text > div:nth-child(2) {
-  margin-left: -10vw;
+  margin-left: -8vw;
 }
 .sec1_text > div:nth-child(3) {
-  margin-left: 3vw;
+  margin-left: 5vw;
 }
 .sec1_text > div:nth-child(4) {
-  margin-left: -5vw;
-}
-
-#section2 {
-  height: 2000px;
+  margin-left: -2vw;
 }
 /* tmp */
 
 /* body {
-  color: #fff;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-  background-color: #000;
-  width: 100%;
-  height: 10000px;
-} */
+    color: #fff;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #000;
+    width: 100%;
+    height: 10000px;
+  } */
 /* ::-webkit-scrollbar {
-  display: none;
-} */
-.container {
-  width: 70vw;
-  height: 100%;
-  margin: 0 auto;
-  -webkit-overflow-scrolling: touch;
-  position: relative;
-}
-
+    display: none;
+  } *
 /* about */
-#about {
-  padding-top: 100px;
+#section2 {
+  padding-top: 300px;
+  height: 1500px;
+  font-family: "SCoreDream";
 }
-#about img {
+#section2 img {
   display: block;
   margin: 0 auto;
   width: 400px;
   height: 400px;
 }
-#about #about__text {
+#section2 #about__text {
   margin-top: 100px;
 }
-#about #about__text p {
+#section2 #about__text p {
   text-align: center;
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 100;
   line-height: 1.6;
 }
-#about .about__info {
+#section2 .about__info {
+  margin: 0 auto;
   margin-top: 80px;
   display: flex;
-  width: 100%;
+  width: 70vw;
+
   justify-content: space-between;
 }
-#about .about__info .about__inner {
+#section2 .about__info .about__inner {
   justify-content: center;
   align-items: center;
   width: 16%;
   margin-right: 4%;
 }
-#about .about__info .about__inner:nth-child(5) {
+#section2 .about__info .about__inner:nth-child(5) {
   margin-right: 0;
 }
-#about .about__info .about__inner .about__logo {
+#section2 .about__info .about__inner .about__logo {
   width: 40px;
   height: 40px;
   margin-bottom: 30px;
 }
-#about .about__info .about__inner:nth-child(1) .about__logo {
+#section2 .about__info .about__inner:nth-child(1) .about__logo {
   left: 5px;
 }
 
-#about .about__info .about__inner .about__cont {
+#section2 .about__info .about__inner .about__cont {
   margin-top: 20px;
   font-size: 24px;
   text-align: center;
@@ -178,57 +177,61 @@ body {
 /* //about */
 
 /* archive */
-#archive {
+#section3 {
   margin: 0 auto;
-  margin-top: 100px;
-  padding-top: 200px;
   display: flex;
-
+  padding-top: 150px;
   width: 70vw;
   height: 800px;
   justify-content: space-between;
   text-align: center;
 }
-#archive .archive__inner {
+#section3 .archive__inner {
   width: 44%;
   height: 100%;
 }
-#archive .archive__inner .archive__img {
+#section3 .archive__inner .archive__img {
   margin: 0 auto;
   width: 10vw;
   height: 10vw;
   display: block;
 }
-#archive .archive__inner .archive__title {
+#section3 .archive__inner .archive__title {
   display: inline-block;
   margin: 60px 0;
-  font-size: 5vw;
+  margin-top: 80px;
+  font-size: 6vw;
+  line-height: 1;
   font-weight: bold;
   border-bottom: 1px solid #fff;
 }
-#archive .archive__inner .archive__title:hover {
+#section3 .archive__inner .archive__title:hover {
   color: rgb(196, 196, 196);
+  margin-top: 70px;
+  margin-bottom: 70px;
+  transition: 0.2s;
 }
-#archive .archive__inner .archive__desc {
+#section3 .archive__inner .archive__desc {
   font-weight: bold;
   font-family: "SCoreDream";
   font-size: 1vw;
   margin-bottom: 50px;
 }
-#archive .archive__inner .archive__cont {
+#section3 .archive__inner .archive__cont {
   font-family: "SCoreDream";
   font-size: 1.2vw;
   text-align-last: left;
   font-weight: 200;
+  line-height: 1.6;
 }
 /* //archive */
 /* projects */
-#project {
+#section4 {
   margin-top: 350px;
   padding-top: 100px;
   position: relative;
 }
-#project .project__title {
+#section4 .project__title {
   font-family: "inter";
   position: absolute;
   font-weight: bold;
@@ -236,10 +239,10 @@ body {
   font-size: 180px;
   border-width: bold;
 }
-#project .project__inner {
+#section4 .project__inner {
   margin-top: 500px;
 }
-#project .project__inner .project__number {
+#section4 .project__inner .project__number {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -251,29 +254,29 @@ body {
   z-index: 9999;
 }
 /* #project .project__inner:nth-child(2) .project__number::before {
-  z-index: 2;
-  content: "1.";
-  font-size: 250px;
-  font-weight: bold;
-  color: #ccc;
-  left: 10px;
-  top: -150px;
-  opacity: 0.3;
-  position: absolute;
-} */
-#project .project__inner .project__box {
+    z-index: 2;
+    content: "1.";
+    font-size: 250px;
+    font-weight: bold;
+    color: #ccc;
+    left: 10px;
+    top: -150px;
+    opacity: 0.3;
+    position: absolute;
+  } */
+#section4 .project__inner .project__box {
   font-family: "SCoreDream";
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
   height: 440px;
 }
-#project .project__inner .project__img {
+#section4 .project__inner .project__img {
   width: 48%;
   object-fit: contain;
   position: relative;
 }
-#project .project__inner .project__bg1 {
+#section4 .project__inner .project__bg1 {
   z-index: 0;
   position: absolute;
   top: 600px;
@@ -281,7 +284,7 @@ body {
   height: 780px;
   left: -320px;
 }
-#project .project__inner .project__bg2 {
+#section4 .project__inner .project__bg2 {
   z-index: 0;
   position: absolute;
   top: 1640px;
@@ -289,7 +292,7 @@ body {
   height: 780px;
   left: 600px;
 }
-#project .project__inner .project__bg3 {
+#section4 .project__inner .project__bg3 {
   z-index: 0;
   position: absolute;
   top: 2700px;
@@ -297,21 +300,21 @@ body {
   height: 780px;
   left: -220px;
 }
-#project .project__inner .project__cont {
+#section4 .project__inner .project__cont {
   width: 47%;
   z-index: 8000;
   height: 100%;
 }
-#project .project__inner .project__cont .project__subTitle {
+#section4 .project__inner .project__cont .project__subTitle {
   font-size: 36px;
   line-height: 1;
 }
-#project .project__inner .project__cont .project__period {
+#section4 .project__inner .project__cont .project__period {
   margin: 12px 0;
   font-weight: 200;
   font-size: 14px;
 }
-#project .project__inner .project__cont .project__desc {
+#section4 .project__inner .project__cont .project__desc {
   font-size: 20px;
   font-weight: 200;
   line-height: 1.6;
@@ -320,25 +323,25 @@ body {
   margin-top: 30px;
   width: 100%;
 }
-#project .project__inner .project__cont .project__main {
+#section4 .project__inner .project__cont .project__main {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
 }
-#project .project__inner .project__cont .project__main .project__sub {
+#section4 .project__inner .project__cont .project__main .project__sub {
   width: 15%;
   height: 60px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
 }
-#project .project__inner .project__cont .project__main .project__text {
+#section4 .project__inner .project__cont .project__main .project__text {
   width: 83%;
   font-weight: 200;
   font-size: 16px;
   line-height: 1.6;
 }
-#project .project__inner .project__cont .project__view {
+#section4 .project__inner .project__cont .project__view {
 }
 /* //projects */
 /* toyprojects */
@@ -375,16 +378,16 @@ body {
   z-index: 9999;
 }
 /* #toyproject .project__inner:nth-child(2) .project__number::before {
-  z-index: 2;
-  content: "1.";
-  font-size: 250px;
-  font-weight: bold;
-  color: #ccc;
-  left: 10px;
-  top: -150px;
-  opacity: 0.3;
-  position: absolute;
-} */
+    z-index: 2;
+    content: "1.";
+    font-size: 250px;
+    font-weight: bold;
+    color: #ccc;
+    left: 10px;
+    top: -150px;
+    opacity: 0.3;
+    position: absolute;
+  } */
 #toyproject .project__inner .project__box {
   font-family: "SCoreDream";
   display: flex;
