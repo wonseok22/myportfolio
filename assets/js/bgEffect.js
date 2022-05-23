@@ -1,5 +1,5 @@
 //Get window size
-var ww = window.innerWidth,
+var ww = window.innerWidth-20,
   wh = window.innerHeight;
 
 //Create a WebGL renderer

@@ -227,23 +227,23 @@ body {
 }
 /* //archive */
 /* projects */
-#section4 {
+/* #section4 {
   width: 70vw;
   margin: 0 auto;
   height: 3500px;
   margin-top: 350px;
   padding-top: 100px;
   position: relative;
-}
-#section4 .project__title {
+} */
+/* #section4 .project__title {
   font-family: "inter";
   position: absolute;
   font-weight: bold;
   left: 56%;
   font-size: 180px;
   border-width: bold;
-}
-#section4 .project__inner {
+} */
+/* #section4 .project__inner {
   margin-top: 500px;
 }
 #section4 .project__inner .project__number {
@@ -336,7 +336,7 @@ body {
   line-height: 1.6;
 }
 #section4 .project__inner .project__cont .project__view {
-}
+} */
 /* //projects */
 /* toyprojects */
 #section5 {
