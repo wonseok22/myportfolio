@@ -125,7 +125,7 @@ body {
 /* about */
 #section2 {
   padding-top: 300px;
-  height: 1500px;
+  height: 1200px;
   font-family: "SCoreDream";
 }
 #section2 img {
@@ -172,6 +172,7 @@ body {
 #section2 .about__info .about__inner .about__cont {
   margin-top: 20px;
   font-size: 24px;
+  font-weight: 300;
   text-align: center;
 }
 /* //about */
@@ -182,7 +183,7 @@ body {
   display: flex;
   padding-top: 150px;
   width: 70vw;
-  height: 800px;
+  height: 1200px;
   justify-content: space-between;
   text-align: center;
 }
@@ -227,6 +228,9 @@ body {
 /* //archive */
 /* projects */
 #section4 {
+  width: 70vw;
+  margin: 0 auto;
+  height: 3500px;
   margin-top: 350px;
   padding-top: 100px;
   position: relative;
@@ -235,7 +239,7 @@ body {
   font-family: "inter";
   position: absolute;
   font-weight: bold;
-  left: 58%;
+  left: 56%;
   font-size: 180px;
   border-width: bold;
 }
@@ -253,17 +257,7 @@ body {
   position: relative;
   z-index: 9999;
 }
-/* #project .project__inner:nth-child(2) .project__number::before {
-    z-index: 2;
-    content: "1.";
-    font-size: 250px;
-    font-weight: bold;
-    color: #ccc;
-    left: 10px;
-    top: -150px;
-    opacity: 0.3;
-    position: absolute;
-  } */
+
 #section4 .project__inner .project__box {
   font-family: "SCoreDream";
   display: flex;
@@ -345,28 +339,28 @@ body {
 }
 /* //projects */
 /* toyprojects */
-#toyproject {
-  margin-top: 400px;
-  margin-bottom: 100px;
+#section5 {
+  margin: 300px auto;
+  width: 70vw;
   padding-top: 250px;
   position: relative;
 }
-#toyproject .project__title {
+#section5 .project__title {
   font-family: "inter";
   position: absolute;
   font-weight: bold;
-  left: -26%;
+  left: -20%;
   font-size: 180px;
   line-height: 0.9;
   border-width: bold;
 }
-#toyproject .project__title p:nth-child(2) {
+#section5 .project__title p:nth-child(2) {
   margin-left: 230px;
 }
-#toyproject .project__inner {
+#section5 .project__inner {
   margin-top: 500px;
 }
-#toyproject .project__inner .project__number {
+#section5 .project__inner .project__number {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -388,19 +382,19 @@ body {
     opacity: 0.3;
     position: absolute;
   } */
-#toyproject .project__inner .project__box {
+#section5 .project__inner .project__box {
   font-family: "SCoreDream";
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
   height: 440px;
 }
-#toyproject .project__inner .project__img {
+#section5 .project__inner .project__img {
   width: 48%;
   object-fit: contain;
   position: relative;
 }
-#toyproject .project__inner .project__bg1 {
+#section5 .project__inner .project__bg1 {
   z-index: 0;
   position: absolute;
   top: 720px;
@@ -408,7 +402,7 @@ body {
   height: 780px;
   left: -250px;
 }
-#toyproject .project__inner .project__bg2 {
+#section5 .project__inner .project__bg2 {
   z-index: 0;
   position: absolute;
   top: 1750px;
@@ -416,20 +410,20 @@ body {
   height: 880px;
   left: 600px;
 }
-#toyproject .project__inner .project__cont {
+#section5 .project__inner .project__cont {
   width: 47%;
   height: 100%;
 }
-#toyproject .project__inner .project__cont .project__subTitle {
+#section5 .project__inner .project__cont .project__subTitle {
   font-size: 36px;
   line-height: 1;
 }
-#toyproject .project__inner .project__cont .project__period {
+#section5 .project__inner .project__cont .project__period {
   margin: 12px 0;
   font-weight: 200;
   font-size: 14px;
 }
-#toyproject .project__inner .project__cont .project__desc {
+#section5 .project__inner .project__cont .project__desc {
   font-size: 20px;
   font-weight: 200;
   line-height: 1.6;
@@ -438,44 +432,44 @@ body {
   margin-top: 30px;
   width: 100%;
 }
-#toyproject .project__inner .project__cont .project__main {
+#section5 .project__inner .project__cont .project__main {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
 }
-#toyproject .project__inner .project__cont .project__main .project__sub {
+#section5 .project__inner .project__cont .project__main .project__sub {
   width: 15%;
   height: 60px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.6;
 }
-#toyproject .project__inner .project__cont .project__main .project__text {
+#section5 .project__inner .project__cont .project__main .project__text {
   width: 83%;
   font-weight: 200;
   font-size: 16px;
   line-height: 1.6;
 }
-#toyproject .project__inner .project__cont .project__view {
-}
+
 /* //toyprojects */
 
 /* footer */
-#footer {
+#section6 {
   width: 100%;
   height: 1000px;
   background-color: #55eade;
 }
-#footer .cont {
+#section6 .cont {
   width: 1920px;
   height: 100%;
   margin: 0 auto;
   color: #000 !important;
 }
-#footer .cont .footer__text {
+#section6 .cont .footer__text {
   display: flex;
 }
-#footer .cont .footer__text .footer__title {
+#section6 .cont .footer__text .footer__title {
+  color: #000;
   font-size: 200px;
   font-weight: 900;
   font-family: "inter";
@@ -484,31 +478,32 @@ body {
   padding-left: 100px;
   padding-top: 100px;
 }
-#footer .cont .footer__inner {
+#section6 .cont .footer__inner {
   width: 100%;
   height: 600px;
   margin-bottom: 30px;
   display: flex;
 }
-#footer .cont .footer__inner div {
+#section6 .cont .footer__inner div {
   margin-top: 150px;
   width: 33%;
   height: 70%;
   padding-left: 75px;
 }
-#footer .cont .footer__inner div:nth-child(1) {
+#section6 .cont .footer__inner div:nth-child(1) {
   border-right: 3px solid #000;
 }
-#footer .cont .footer__inner div:nth-child(2) {
+#section6 .cont .footer__inner div:nth-child(2) {
   border-right: 3px solid #000;
 }
-#footer .cont .footer__copyright {
+#section6 .cont .footer__copyright {
   padding-top: 25px;
   font-weight: bold;
   font-size: 22px;
   text-align: center;
+  color: #000;
 }
-#footer .cont .footer__inner img {
+#section6 .cont .footer__inner img {
   width: 28%;
   height: 25%;
 }
