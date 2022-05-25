@@ -1,3 +1,4 @@
+@import url('https://rsms.me/inter/inter.css');
 html {
     font-family: "GmarketSans";
 }
@@ -106,7 +107,7 @@ a {
 #section2 {
     background-color: #000;
     padding-top: 300px;
-    height: 1200px;
+    height: 1700px;
     font-family: "SCoreDream";
 }
 
@@ -115,25 +116,32 @@ a {
     margin: 0 auto;
     width: 400px;
     height: 400px;
+    margin-bottom: 150px;
 }
 
-#section2 #about__text {
-    margin-top: 100px;
-}
-
-#section2 #about__text p {
+#section2 .about-text {
     text-align: center;
     font-size: 24px;
     font-weight: 100;
     line-height: 1.6;
+    visibility: hidden;
+
 }
+.line {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    counter-reset: #fff;
+    color: #fff;
+  }
+  
 
 #section2 .about__info {
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top:150px;
     display: flex;
     width: 70vw;
-
     justify-content: space-between;
 }
 
@@ -196,7 +204,6 @@ a {
     font-size: 6vw;
     line-height: 1;
     font-weight: bold;
-    border-bottom: 1px solid #fff;
 }
 
 #section3 .archive__inner .archive__title:hover {
@@ -233,10 +240,10 @@ a {
 }
 
 #section4 .project__title {
-    font-family: "inter";
+    font-family: "Inter";
     position: absolute;
     font-weight: bold;
-    left: 56%;
+    left: 49%;
     font-size: 180px;
     border-width: bold;
 }
@@ -325,28 +332,40 @@ a {
     width: 100%;
 }
 
+
 #section4 .project__inner .project__cont .project__main {
     display: flex;
-    margin: 10px 0;
+    margin: 3px 0;
     justify-content: space-between;
 }
 
 #section4 .project__inner .project__cont .project__main .project__sub {
-    width: 15%;
-    height: 60px;
-    font-size: 20px;
+    width: 12%;
+    height: 40px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.6;
 }
 
 #section4 .project__inner .project__cont .project__main .project__text {
-    width: 83%;
+    width: 86%;
     font-weight: 200;
     font-size: 16px;
     line-height: 1.6;
 }
 
-#section4 .project__inner .project__cont .project__view {}
+#section4 .project__inner .project__cont .project__view {
+    display: inline-block;
+    color: #000;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    line-height: 2.5;
+}
 
 /* locomotive */
 html.has-scroll-smooth {
@@ -413,7 +432,7 @@ html.has-scroll-dragging {
 }
 
 .toyproject__title {
-    font-family: "inter";
+    font-family: "Inter";
     font-weight: bold;
     font-size: 180px;
     border-width: bold;
@@ -525,25 +544,36 @@ html.has-scroll-dragging {
 
 #section5 .project__inner .project__cont .project__main {
     display: flex;
-    margin: 10px 0;
+    margin: 3px 0;
     justify-content: space-between;
 }
 
 #section5 .project__inner .project__cont .project__main .project__sub {
-    width: 15%;
-    height: 60px;
-    font-size: 20px;
+    width: 12%;
+    height: 40px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.6;
 }
 
 #section5 .project__inner .project__cont .project__main .project__text {
-    width: 83%;
+    width: 86%;
     font-weight: 200;
     font-size: 16px;
     line-height: 1.6;
 }
-
+#section5 .project__inner .project__cont .project__view {
+    display: inline-block;
+    color: #000;
+    width: 120px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;
+    line-height: 2.5;
+}
 /* footer */
 #section6 {
     width: 100%;
@@ -563,7 +593,7 @@ html.has-scroll-dragging {
     color: #000;
     font-size: 200px;
     font-weight: 900;
-    font-family: "inter";
+    font-family: "Inter";
     line-height: 1;
     width: 50%;
     padding-left: 100px;
