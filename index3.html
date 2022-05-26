@@ -22,9 +22,9 @@
                     </div>
                     <div data-scroll data-scroll-speed="-1" data-scroll-direction="horizontal">
                         FRIENDLY</div>
-                    <div data-scroll data-scroll-speed="1.5" data-scroll-direction="horizontal">
+                    <div data-scroll data-scroll-speed="2" data-scroll-direction="horizontal">
                         BACK-END</div>
-                    <div data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
+                    <div data-scroll data-scroll-speed="-2.5" data-scroll-direction="horizontal">
                         DEVELOPER</div>
                 </div>
             </div>
@@ -351,13 +351,14 @@
         ScrollTrigger.scrollerProxy(pageContents, {
 
             scrollTop(value) {
-                if (scroller.scroll.instance.scroll.y > 1100 && textFlag) {
+                if (scroller.scroll.instance.scroll.y > 1200 && textFlag) {
                     textFlag = false
                     splitLines(".about-text");
 
                     let revealText = document.querySelectorAll(".about-text");
 
                     let revealLines = revealText.forEach((element) => {
+                        console.log(element)
                         const lines = element.querySelectorAll(".words");
 
                         let tl = gsap.timeline({
